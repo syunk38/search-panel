@@ -1,0 +1,39 @@
+{
+  "name": "search-panel",
+  "version": "1.0.0",
+  "description": "検索パネル検証用",
+  "main": "index.js",
+  "scripts": {
+    "watch": "watchify src/index.js --extension=js -o 'exorcist dist/bundle.js.map > dist/bundle.js' -d -v"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syunk38/search-panel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/syunk38/search-panel/issues"
+  },
+  "homepage": "https://github.com/syunk38/search-panel#readme",
+  "devDependencies": {
+    "exorcist": "^0.4.0",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "react-redux": "^4.4.5",
+    "redux": "^3.5.2",
+    "redux-logger": "^2.6.1",
+    "redux-thunk": "^2.1.0"
+  },
+  "dependencies": {
+    "babelify": "~6.3.0",
+    "browserify": "~11.2.0",
+    "doc-ready": "^1.0.4",
+    "watchify": "~3.4.0"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  }
+}
