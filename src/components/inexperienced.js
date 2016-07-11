@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class InexperiencedCheckBox extends Component{
   constructor(props) {
     super(props);
-    this.state = {checked: true}
+    this.state = {checked: false}
   }
 
   handleChecked(e) {
@@ -17,8 +17,15 @@ export default class InexperiencedCheckBox extends Component{
   render(){
     return (
       <div>
-        <label for="inexperienced">未経験</label>
-        <input name="inexperienced" id="inexperienced" type="checkbox" checked={this.checked()} onChange={this.handleChecked.bind(this)} />
+        <label htmlFor="inexperienced">未経験</label>
+        <input
+          name="inexperienced"
+          id="inexperienced"
+          type="checkbox"
+          checked={this.checked()}
+          value={this.state.checked}
+          onChange={this.handleChecked.bind(this)}
+        />
       </div>
     )
   }
