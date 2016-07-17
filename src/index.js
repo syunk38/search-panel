@@ -1,10 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import SearchPanel from './components/search-panel'
-import docReady from 'doc-ready'
+import { Provider } from 'react-redux'
+import App from './containers/app'
+import searchConditions from './reducers'
+import { createStore } from 'redux'
 
-const ready = () => {
-  ReactDOM.render(<SearchPanel />, document.querySelector('#content'));
-}
+const store = createStore(searchConditions);
+console.log(store.getState());
 
-docReady(ready);
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>
+  , document.querySelector('#content')
+);
