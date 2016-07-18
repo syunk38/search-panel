@@ -3,10 +3,16 @@ import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 import App from './containers/app'
 import searchConditions from './reducers'
-import { createStore } from 'redux'
+import { applyMiddleware, createStore } from 'redux'
+import thunk from 'redux-thunk'
+import promise from 'redux-promise'
+import createLogger from 'redux-logger'
 
-const store = createStore(searchConditions);
-console.log(store.getState());
+const logger = createLogger()
+const store = createStore(
+  searchConditions,
+  applyMiddleware(thunk, promise, logger)
+);
 
 ReactDOM.render(
   <Provider store={store}>
