@@ -3,3 +3,11 @@ export const toggleInexperienced = () => {
     type: 'TOGGLE_INEXPERIENCED'
   }
 }
+
+export const selectSalary = (max, min) => {
+  return {
+    type: 'SELECT_SALARY',
+    max,
+    min
+  }
+}

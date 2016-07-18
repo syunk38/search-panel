@@ -28,7 +28,6 @@
   "dependencies": {
     "babelify": "~6.3.0",
     "browserify": "~11.2.0",
-    "doc-ready": "^1.0.4",
     "watchify": "~3.4.0"
   },
   "browserify": {

@@ -1,5 +1,6 @@
 import React from 'react'
-import Inexperienced from '../containers/inexperienced.js'
+import Inexperienced from '../containers/inexperienced'
+import Salary from '../containers/salary'
 
 const SearchPanel = () => {
   return (
@@ -7,6 +8,7 @@ const SearchPanel = () => {
       <h1>検索</h1>
       <form>
         <Inexperienced />
+        <Salary />
       </form>
     </div>
   )
