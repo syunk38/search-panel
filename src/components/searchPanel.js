@@ -2,7 +2,8 @@ import React from 'react'
 import Inexperienced from '../components/inexperienced'
 import Salary from '../components/salary'
 
-const SearchPanel = ({inexperienced, salary, toggleInexperienced, selectSalary}) => {
+const SearchPanel = props => {
+  const { inexperienced, salary, toggleInexperienced, selectSalary } = props
   return (
     <div className="search-panel">
       <h1>検索</h1>
