@@ -1,5 +1,7 @@
+import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import InexperiencedCheckBox from '../components/inexperiencedCheckBox'
+import { toggleInexperienced } from '../actions'
 
 const mapStateToProps = state => {
   return {
@@ -8,13 +10,7 @@ const mapStateToProps = state => {
 }
 
 const mapDispatchToProps = dispatch => {
-  return {
-    onInexperiencedChange: () => {
-      dispatch({
-        type: 'TOGGLE_INEXPERIENCED'
-      });
-    }
-  }
+  return bindActionCreators({ toggleInexperienced }, dispatch)
 }
 
 const Inexperienced = connect(
