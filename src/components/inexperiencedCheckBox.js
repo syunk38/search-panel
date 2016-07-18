@@ -1,7 +1,6 @@
 import React, { Component, PropTypes } from 'react'
 
-const InexperiencedCheckBox = ({inexperienced, onInexperiencedChange}) => {
-  return (
+const InexperiencedCheckBox = ({inexperienced, onInexperiencedChange}) => (
     <div>
       <label htmlFor="inexperienced">未経験</label>
       <input
@@ -12,8 +11,7 @@ const InexperiencedCheckBox = ({inexperienced, onInexperiencedChange}) => {
         onChange={onInexperiencedChange}
       />
     </div>
-  );
-}
+  )
 
 InexperiencedCheckBox.propTypes = {
   inexperienced: PropTypes.bool.isRequired,

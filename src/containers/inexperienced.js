@@ -11,7 +11,7 @@ const mapDispatchToProps = dispatch => {
   return {
     onInexperiencedChange: () => {
       dispatch({
-        type: 'TOGGEL_INEXPERIENCED'
+        type: 'TOGGLE_INEXPERIENCED'
       });
     }
   }

@@ -1,9 +1,9 @@
 const searchConditions = (state = {inexperienced: false}, action) => {
   switch (action.type) {
-    case 'TOGGEL_INEXPERIENCED':
-      state.inexperienced = !state.inexperienced
-      console.log(state)
-      return state;
+    case 'TOGGLE_INEXPERIENCED':
+      return Object.assign({}, state, {
+        inexperienced: !state.inexperienced
+      })
     default:
       return state;
   }
