@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react'
 
-const InexperiencedCheckBox = ({inexperienced, toggleInexperienced}) => (
+const Inexperienced = ({inexperienced, toggleInexperienced}) => (
     <div>
       <label htmlFor="inexperienced">未経験</label>
       <input
@@ -13,9 +13,9 @@ const InexperiencedCheckBox = ({inexperienced, toggleInexperienced}) => (
     </div>
   )
 
-InexperiencedCheckBox.propTypes = {
+Inexperienced.propTypes = {
   inexperienced: PropTypes.bool.isRequired,
   toggleInexperienced: PropTypes.func.isRequired
 }
 
-export default InexperiencedCheckBox
+export default Inexperienced

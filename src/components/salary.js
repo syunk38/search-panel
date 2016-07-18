@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react'
 
-const SalarySelectBox = ({min, max, selectSalary}) => {
+const Salary = ({salary, selectSalary}) => {
+  const {min, max} = salary
   return (
     <div>
       <select
@@ -35,10 +36,10 @@ const salaryOptions = () => {
   })
 }
 
-SalarySelectBox.propTypes = {
-  min: PropTypes.number.isRequired,
-  max: PropTypes.number.isRequired
+Salary.propTypes = {
+  salary: PropTypes.object.isRequired,
+  selectSalary: PropTypes.func.isRequired
 }
 
 
-export default SalarySelectBox
+export default Salary

@@ -1,14 +1,14 @@
 import React from 'react'
-import Inexperienced from '../containers/inexperienced'
-import Salary from '../containers/salary'
+import Inexperienced from '../components/inexperienced'
+import Salary from '../components/salary'
 
-const SearchPanel = () => {
+const SearchPanel = ({inexperienced, salary, toggleInexperienced, selectSalary}) => {
   return (
     <div className="search-panel">
       <h1>検索</h1>
       <form>
-        <Inexperienced />
-        <Salary />
+        <Inexperienced inexperienced={inexperienced} toggleInexperienced={toggleInexperienced}/>
+        <Salary salary={salary} selectSalary={selectSalary}/>
       </form>
     </div>
   )
