@@ -11,6 +11,7 @@ const Salary = ({salary, selectSalary}) => {
           selectSalary(max, Number.parseInt(e.currentTarget.value))
         } }
       >
+        <option>選択してください</option>
         { salaryOptions() }
       </select>
       <select
@@ -20,6 +21,7 @@ const Salary = ({salary, selectSalary}) => {
           selectSalary(Number.parseInt(e.currentTarget.value), min)
         } }
       >
+        <option>選択してください</option>
         { salaryOptions() }
       </select>
     </div>

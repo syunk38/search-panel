@@ -1,23 +1,10 @@
-const defaultState = {
-  inexperienced: false,
-  salary: {
-    min: 200,
-    max: 400
-  }
-}
+import salary from './salary.js'
+import inexperienced from './inexperienced.js'
+import { combineReducers } from 'redux'
 
-const searchConditions = (state = defaultState, action) => {
-  switch (action.type) {
-    case 'TOGGLE_INEXPERIENCED':
-      state.inexperienced = !state.inexperienced
-      return Object.assign({}, state)
-    case 'SELECT_SALARY':
-      state.salary.max = action.max
-      state.salary.min = action.min
-      return Object.assign({}, state)
-    default:
-      return state;
-  }
-}
+const searchConditions = combineReducers({
+  salary,
+  inexperienced
+})
 
 export default searchConditions

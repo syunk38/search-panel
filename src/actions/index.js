@@ -7,7 +7,7 @@ export const toggleInexperienced = () => {
 export const selectSalary = (max, min) => {
   return {
     type: 'SELECT_SALARY',
-    max,
-    min
+    min,
+    max
   }
 }
