@@ -1,6 +1,7 @@
 import React from 'react'
 import Inexperienced from '../components/inexperienced'
 import Salary from '../components/salary'
+import Keyword from '../components/keyword'
 
 const SearchPanel = props => {
   const { inexperienced, salary, toggleInexperienced, selectSalary } = props
@@ -10,6 +11,7 @@ const SearchPanel = props => {
       <form>
         <Inexperienced inexperienced={inexperienced} toggleInexperienced={toggleInexperienced}/>
         <Salary salary={salary} selectSalary={selectSalary}/>
+        <Keyword keyword='' typeKeyword={ e => { console.log(`${e.currentTarget.value} is typed`) } } />
       </form>
     </div>
   )
