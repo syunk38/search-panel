@@ -11,3 +11,10 @@ export const selectSalary = (max, min) => {
     max
   }
 }
+
+export const typeKeyword = (keyword) => {
+  return {
+    type: 'TYPE_KEYWORD',
+    keyword
+  }
+}

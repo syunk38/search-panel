@@ -5,7 +5,7 @@ const sepalater = [',', ' ']
 const Keyword = ({keyword, typeKeyword}) => (
     <div>
       <label htmlFor="keyword">キーワード</label>
-      <textarea name="keyword" value={ keyword } placeholder="キーワードを入力" onChange={ typeKeyword } />
+      <textarea name="keyword" value={ keyword } placeholder="キーワードを入力" onChange={ e => { typeKeyword(e.currentTarget.value); } } />
     </div>
   )
 

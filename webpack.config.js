@@ -3,8 +3,6 @@ const rootDir = path.resolve('./')
 const distDir = path.join(rootDir, '/dist')
 const srcDir = path.join(rootDir, '/src')
 
-console.log(srcDir)
-
 module.exports = {
   entry: {
     bundle: path.join(srcDir, 'index.js')

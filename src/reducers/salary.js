@@ -1,4 +1,3 @@
-
 const defaultState = { min: '', max: '' }
 
 const salary = (state = defaultState, action) => {

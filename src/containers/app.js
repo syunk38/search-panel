@@ -10,7 +10,8 @@ const mapStateToProps = state => {
     salary: {
       min: state.salary.min,
       max: state.salary.max
-    }
+    },
+    keyword: state.keyword
   }
 }
 
