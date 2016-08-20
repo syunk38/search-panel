@@ -1,7 +1,5 @@
 import React, { Component, PropTypes } from 'react'
 
-const sepalater = [',', ' ']
-
 const Keyword = ({keyword, typeKeyword}) => (
     <div>
       <label htmlFor="keyword">キーワード</label>
