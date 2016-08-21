@@ -1,7 +1,5 @@
 import React from 'react'
-import Inexperienced from '../components/inexperienced'
-import Salary from '../components/salary'
-import Keyword from '../components/keyword'
+import FirstPanel from './firstPanel'
 
 const SearchPanel = props => {
   const {
@@ -17,9 +15,7 @@ const SearchPanel = props => {
     <div className="search-panel">
       <h1>検索</h1>
       <form>
-        <Inexperienced inexperienced={inexperienced} toggleInexperienced={toggleInexperienced}/>
-        <Salary salary={salary} selectSalary={selectSalary}/>
-        <Keyword keyword={keyword} typeKeyword={typeKeyword} />
+        <FirstPanel {...props}/>
       </form>
     </div>
   )
