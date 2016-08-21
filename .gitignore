@@ -1,4 +1,3 @@
 node_modules
-frontend/dist/*js
-frontend/dist/*js.map
+frontend/dist
 npm-debug.log
