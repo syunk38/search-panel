@@ -1,5 +1,5 @@
 import React from 'react'
-import SearchPanel from '../components/searchPanel'
+import SearchPanel from './searchPanel'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import * as searchConditionActions from '../actions'
