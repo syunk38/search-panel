@@ -11,7 +11,8 @@ import createLogger from 'redux-logger'
 const logger = createLogger()
 const store = createStore(
   searchConditions,
-  applyMiddleware(thunk, promise, logger)
+  applyMiddleware(thunk, promise, logger),
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
 ReactDOM.render(
