@@ -1,7 +1,7 @@
 const path = require('path')
 const rootDir = path.resolve('./')
-const distDir = path.join(rootDir, '/dist')
-const srcDir = path.join(rootDir, '/src')
+const distDir = path.join(rootDir, '/frontend/dist')
+const srcDir = path.join(rootDir, '/frontend/src')
 
 module.exports = {
   entry: {
